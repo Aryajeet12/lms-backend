@@ -1,5 +1,5 @@
 import mongoose from "mongoose"
-MONGO_URI = process.MONGO_URI;
+MONGO_URI = process.env.MONGO_URI;
 
 if (!MONGO_URI){
     throw new Error("MONGO_URI not found");
